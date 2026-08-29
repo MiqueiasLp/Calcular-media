@@ -13,9 +13,10 @@ def verificar_aprovacao(media, faltas, nome):
         print(f"{nome} foi aprovado com média {media} e {faltas} faltas.")
         return "Aprovado"
     elif media >= 5 and faltas <= 5:
-        print(f"{nome} está em recuperação com média {media} e {faltas} faltas.")
+        print(f"{nome} está em recuperação com média {media} e {faltas} faltas.") 
         return "Em Recuperação"
     else:
+        print(f"{nome} está reprovado com média {media} e {faltas} faltas.")
         return "Reprovado"
 
 n = input("Digite o nome do aluno: ")
